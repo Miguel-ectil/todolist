@@ -5,6 +5,8 @@ import java.io.IOException;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
+import java.util.Base64;
+
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -20,9 +22,12 @@ public class FilterTaskAuth extends OncePerRequestFilter {
     // Pegar a autenticação (usuário e senha)
     var authorization = request.getHeader("Authorization");
     
-    var user_password = authorization.substring("Basic".length()).trim();
+    var authEncoded = authorization.substring("Basic".length()).trim();
+
+    byte[] authDecode = Base64.getDecoder().decode(authEncoded);
+
     System.out.println("Authorization");
-    System.out.println(user_password);
+    System.out.println(authDecode);
 
     // Validar usuário
     // Validar senha
