@@ -29,7 +29,13 @@ public class TaskController {
     // 10/11/2024 - Current;
     // 10/10/2024 - StartAt;
     if (currentDate.isAfter(taskModel.getStartAt()) || currentDate.isAfter(taskModel.getEndAt())) {
-      return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("A data de inicio / data de término deve ser maior do que a data atual");
+      return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+          .body("A data de inicio / data de término deve ser maior do que a data atual");
+    }
+    
+    if (taskModel.getStartAt().isAfter(taskModel.getEndAt())) {
+      return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+          .body("A data de inicio deve ser menor do que a data de término");
     }
 
     var task = this.taskRepository.save(taskModel);
