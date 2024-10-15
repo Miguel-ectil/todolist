@@ -1,6 +1,7 @@
 package br.com.miguel.todolist.filter;
 
 import java.io.IOException;
+import java.util.Base64;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -8,8 +9,6 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
 import br.com.miguel.todolist.user.IUserRepository;
-
-import java.util.Base64;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -27,8 +26,8 @@ public class FilterTaskAuth extends OncePerRequestFilter {
     throws ServletException, IOException {
       
       var servletPath = request.getServletPath();
-      
-      if (servletPath.equals("/tasks/")) {
+      System.out.println("PATH " + servletPath);
+      if (servletPath.startsWith("/tasks/")) {
         // Pegar a autenticação (usuário e senha)
         var authorization = request.getHeader("Authorization");
 
