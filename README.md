@@ -58,3 +58,24 @@ A aplicação está implantada no Render, podendo ser acessada publicamente.
 ### Como usar a API no Render
 - Utilize ferramentas como Postman ou Swagger para consumir os endpoints da API.
 - Certifique-se de incluir o token JWT para acessar rotas protegidas.
+
+## Contribuições
+Contribuições são bem-vindas! Para contribuir:
+
+1. Faça um fork deste repositório.
+2. Crie uma branch com sua feature:
+
+```
+  git checkout -b minha-feature
+```
+3. Faça commit das alterações:
+
+```
+  git commit -m 'Adicionei minha feature'
+```
+4. Envie para o repositório remoto:
+
+```
+  git push origin minha-feature
+```
+5. Abra um Pull Request.
