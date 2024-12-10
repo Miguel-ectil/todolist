@@ -35,21 +35,21 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina para ex
 - 👤 Cadastro de novos usuários.
 - 🔐 Login com autenticação e geração de token JWT.
 
-## Segurança
+## 🔒 Segurança
 A aplicação utiliza Spring Security para proteger os dados do usuário:
 
 - JWT (JSON Web Token): Para autenticação de rotas protegidas.
 - Senhas criptografadas com BCrypt.
 
-## Deploy no Render
+## 🚀 Deploy no Render
 A aplicação está implantada no Render, podendo ser acessada publicamente.
 
-- URL de Produção: https://project-todolist-0gdo.onrender.com
+- 🌐 URL de Produção: https://project-todolist-0gdo.onrender.com
 ### Como usar a API no Render
 - Utilize ferramentas como Postman ou Swagger para consumir os endpoints da API.
 - Certifique-se de incluir o token JWT para acessar rotas protegidas.
 
-## Contribuições
+## 🫱🏼‍🫲🏾 Contribuições
 Contribuições são bem-vindas! Para contribuir:
 
 1. Faça um fork deste repositório.
