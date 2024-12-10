@@ -1,23 +1,13 @@
-# TodoList - API de Gerenciamento de Tarefas
+# 📝 TodoList - API de Gerenciamento de Tarefas
 
 Uma API REST desenvolvida em Java utilizando Spring Boot, projetada para gerenciar tarefas (To-Do List). Este projeto é simples, seguro e ideal para estudos de desenvolvimento back-end.
 
 Inclui integração com banco de dados, segurança dos dados do usuário e foi implantado no serviço Render para facilitar o acesso.
 
-Sumário
-Sobre o Projeto
-Tecnologias Utilizadas
-Pré-requisitos
-Como Executar o Projeto
-Funcionalidades
-Segurança
-Deploy no Render
-Contribuições
-
-## Sobre o Projeto
+## 📋 Sobre o Projeto
 O TodoList é uma API para gestão de tarefas, com recursos como criação, listagem, atualização e exclusão de tarefas. Ele implementa boas práticas de segurança e foi implantado no Render para acesso remoto.
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 As principais tecnologias e ferramentas utilizadas no projeto são:
 
 - Java (versão 11 ou superior)
@@ -27,7 +17,7 @@ As principais tecnologias e ferramentas utilizadas no projeto são:
 - Spring Security (Autenticação e autorização)
 - Postman (Testes de API)
 
-## Pré-requisitos
+## ⚙️ Pré-requisitos
 Certifique-se de ter as seguintes ferramentas instaladas em sua máquina para execução local:
 
 1. Java 7+
@@ -35,15 +25,15 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina para ex
 3. Git
 4. (Opcional) Postman para testar os endpoints.
 
-## Funcionalidades
+## ✨ Funcionalidades
 ### Gestão de Tarefas
-- Criar tarefas: Permite adicionar uma nova tarefa.
-- Listar tarefas: Exibe todas as tarefas cadastradas.
-- Atualizar tarefas: Altere o título ou o status de uma tarefa.
+- 🟢 Criar tarefas: Permite adicionar uma nova tarefa.
+- 🟡 Listar tarefas: Exibe todas as tarefas cadastradas.
+- 🟠 Atualizar tarefas: Altere o título ou o status de uma tarefa.
 
 ### Gerenciamento de Usuários
-- Cadastro de novos usuários.
-- Login com autenticação e geração de token JWT.
+- 👤 Cadastro de novos usuários.
+- 🔐 Login com autenticação e geração de token JWT.
 
 ## Segurança
 A aplicação utiliza Spring Security para proteger os dados do usuário:
